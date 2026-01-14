@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios</title>
+
+    <!-- CSS GLOBAL -->
+    <link rel="stylesheet" href="./pages/styles.css" />
+
+    <!-- HEADER -->
+    <script defer src="./components/header.js"></script>
+    <link rel="stylesheet" href="./components/header.css" />
+
+    <!-- FOOTER -->
+    <script defer src="./components/footer.js"></script>
+    <link rel="stylesheet" href="./components/footer.css" />
+
+    <!-- LAYOUT REUTILIZADO (portfolio / servicios) -->
+    <link rel="stylesheet" href="./pages/portofolio.css" />
+  </head>
+
+  <body>
+    <header class="header"></header>
+
+    <main>
+      <!-- HERO -->
+      <section class="services">
+        <div class="services__hero">
+          <div class="services__text">
+            <h2>Mis <span>servicios</span></h2>
+          </div>
+
+          <div class="services__image">
+            <img src="./img/image 1 (1).png" alt="Servicios" />
+          </div>
+        </div>
+      </section>
+
+      <!-- CARDS (MISMO LAYOUT QUE PORTFOLIO) -->
+      <section class="work">
+        <div class="work-conteiner">
+          <article class="card">
+            <img
+              class="work__img"
+              src="img/Course Website Landing Page Thumbnail 1.png"
+            />
+            <h3 class="work__title">Desarrollo web</h3>
+            <p class="work__paragraph">Sitios web modernos y responsivos</p>
+          </article>
+
+          <article class="card">
+            <img
+              class="work__img"
+              src="img/Course Website Landing Page Thumbnail 1.png"
+            />
+            <h3 class="work__title">Animaciones</h3>
+            <p class="work__paragraph">
+              Interfaces interactivas con animaciones
+            </p>
+          </article>
+
+          <article class="card">
+            <img
+              class="work__img"
+              src="img/Course Website Landing Page Thumbnail 1.png"
+            />
+            <h3 class="work__title">Apps web</h3>
+            <p class="work__paragraph">Aplicaciones web funcionales</p>
+          </article>
+          <div class="work__button-conteiner">
+            <img
+              class="work__button-img"
+              src="./img/arrow-down-svgrepo-com 1.png"
+              alt=""
+            /><a class="work__button-see">Ver más</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer"></footer>
+    </main>
+  </body>
+</html>

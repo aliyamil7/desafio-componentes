@@ -1,0 +1,117 @@
+/* ===== SERVICES SECTION ===== */
+.services {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0b0f14 0%, #05070a 100%);
+  display: flex;
+  align-items: center;
+}
+
+.services__hero {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 40px;
+}
+
+.services__text h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #ffffff;
+  margin: 0;
+}
+
+.services__text span {
+  color: #00c2ff;
+}
+
+.services__image img {
+  width: 280px;
+  max-width: 100%;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .services__hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .services__text h2 {
+    font-size: 48px;
+  }
+
+  .services__image img {
+    width: 220px;
+  }
+}
+
+/* ===== WORKS ===== */
+
+.work {
+  background-image: url("/img/doodle\ items.png");
+  color: rgba(238, 238, 238, 1);
+}
+
+.work-conteiner {
+  padding: 77px 26px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  background-color: rgba(57, 62, 70, 0.5);
+  border-radius: 16px;
+  min-height: 470px;
+}
+.work__title {
+  font-weight: 800;
+  font-size: 33px;
+}
+.work__paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+.work__img {
+  max-width: 265px;
+  max-height: 158px;
+}
+
+.work__button-conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ===== DESKTOP ===== */
+
+@media (min-width: 960px) {
+  .work-conteiner {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap; /* CLAVE */
+    justify-content: center;
+  }
+
+  .work__button-conteiner {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  .card {
+    margin-bottom: 0;
+    flex: 1;
+    max-width: 360px;
+  }
+}

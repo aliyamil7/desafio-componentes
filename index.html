@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- JS -->
+    <script defer src="./pages/index.js"></script>
+    <script defer src="./components/header.js"></script>
+    <script defer src="./components/footer.js"></script>
+    <script defer src="./components/form.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./pages/styles.css" />
+    <link rel="stylesheet" href="./components/header.css" />
+    <link rel="stylesheet" href="./components/footer.css" />
+    <link rel="stylesheet" href="./components/form.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header"></header>
+
+    <main>
+      <section class="welcome">
+        <div class="welcome-conteiner">
+          <h1 class="welcome__hello"></h1>
+
+          <div class="welcome__subtitle">
+            <h2 class="welcome__text"></h2>
+            <h2 class="welcome__name"></h2>
+          </div>
+        </div>
+
+        <div class="welcome__img-conteiner">
+          <img src="./img/cohete.png" alt="cohete" class="cohete" />
+        </div>
+      </section>
+
+      <section class="presentation">
+        <div class="presentation-conteiner">
+          <div class="presentation__text">
+            <h2 class="presentation__title"></h2>
+            <p class="presentation__paragraph"></p>
+          </div>
+          <img
+            src="./img/avatar-person.jpg"
+            alt="avatar"
+            class="presentation__img"
+          />
+        </div>
+      </section>
+
+      <section class="services__card">
+        <div class="services__card-conteiner">
+          <h2 class="services__title">
+            Mis <span class="services-span">Servicios</span>
+          </h2>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <img src="img/Course Website Landing Page Thumbnail 1.png" />
+            <h3 class="card__title"></h3>
+            <p class="card__paragraph"></p>
+          </article>
+
+          <article class="card">
+            <img src="img/Group 33.png" />
+            <h3 class="card__title"></h3>
+            <p class="card__paragraph"></p>
+          </article>
+
+          <article class="card">
+            <img src="img/Group 1.png" />
+            <h3 class="card__title"></h3>
+            <p class="card__paragraph"></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="form"></section>
+    </main>
+
+    <footer class="footer"></footer>
+  </body>
+</html>

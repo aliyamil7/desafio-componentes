@@ -1,0 +1,103 @@
+/* ===== HEADER ===== */
+
+.header {
+  width: 100%;
+  min-height: 80px;
+  height: auto;
+  overflow: visible;
+  background-color: rgba(19, 23, 28, 1);
+}
+
+.nav-conteiner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  padding: 0 20px;
+}
+
+/* LOGO */
+.logo {
+  height: 40px;
+}
+
+/* ICONO HAMBURGUESA */
+.nav-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* líneas */
+.nav-button span {
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  display: block;
+}
+
+/* ===== MENU ===== */
+
+.nav {
+  display: none;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.nav-list a:hover {
+  color: #00c2ff;
+}
+
+/* MENU ACTIVO (MOBILE) */
+.nav.active {
+  display: block;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 1000;
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 960px) {
+  .nav-button {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+    position: static;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    gap: 32px;
+    padding: 0;
+  }
+
+  .nav-list a {
+    font-size: 18px;
+  }
+}
